@@ -25,11 +25,11 @@ namespace ServerLibrary.Repositories.Implementations
     
                     var command = new NpgsqlCommand(query, connection);
                     command.Parameters.AddWithValue("@utilizador_nome", user.FullName);
-                    command.Parameters.AddWithValue("@nome_abv", user.ShortName);
+                   // command.Parameters.AddWithValue("@nome_abv", user.ShortName);
                     command.Parameters.AddWithValue("@email_parameter", user.Email);
                     command.Parameters.AddWithValue("@password_parameter", user.Password);
-                    command.Parameters.AddWithValue("@area_id", user.IdArea);
-                    command.Parameters.AddWithValue("@active", user.Active);
+                  //  command.Parameters.AddWithValue("@area_id", user.IdArea);
+                   // command.Parameters.AddWithValue("@active", user.Active);
                     var result = await command.ExecuteScalarAsync();
                     connection.Close();
                     bool? resultBool = result as bool?;
@@ -49,11 +49,11 @@ namespace ServerLibrary.Repositories.Implementations
                 var instance = new PostgreSQLTools(NpgsqlDbContext.GetConnectionString());
                 NpgsqlParameter[] parameters = new NpgsqlParameter[] {
                     new NpgsqlParameter("utilizador_nome", user.FullName), //"@nome_utilizador"
-                    new NpgsqlParameter("nome_abv", user.ShortName),
+                  //  new NpgsqlParameter("nome_abv", user.ShortName),
                     new NpgsqlParameter("email_parameter", user.Email),
                     new NpgsqlParameter("password_parameter", user.Password),
-                    new NpgsqlParameter("area_id", user.IdArea),
-                    new NpgsqlParameter("active", user.Active)
+                   // new NpgsqlParameter("area_id", user.IdArea),
+                   // new NpgsqlParameter("active", user.Active)
                 };
                 int? resultBool = instance.SetDbDataScalar("registar_utilizador", parameters);
                 return resultBool == 1 ? new GeneralResponse(true, "Account created") : new GeneralResponse(false, "Account not created");

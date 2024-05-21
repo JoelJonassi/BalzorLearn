@@ -13,10 +13,10 @@
                 <Authorized>
                     <a class="btn btn-one text-danger" @onclick="LogoutCliked">Logout</a>
                 </Authorized>
-                <NotAuthorized>
+                <!---<NotAuthorized>
                     <a class="btn btn-one" href="identity/account/login">Login</a>
                     <a class="btn btn-one" href="identity/account/register">Register</a>
-                </NotAuthorized>
+                </NotAuthorized>-->
             </AuthorizeView>
         </div>
 
@@ -32,6 +32,6 @@
         var logoutModel = new UserSession();
         var customAuthStateProvider = (CustomAuthenticationStateProvider)authStateProvider;
         await customAuthStateProvider.UpdateAuthenticationState(logoutModel);
-        navManager.NavigateTo("/", forceLoad: true);
+        navManager.NavigateTo("/identity/account/login", forceLoad: true);
     }
 }

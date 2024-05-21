@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FR1AUJ+naXZZNNXnp/HlrSvxLeNqLQmiqar6qicXHtK2/9z2LqZV0G76QWhG4TSy6RFOC7V0QbL392iG2boEFw==",
+  "dgSpecHash": "lGU2f2+O/nd1B0tFXKJGxPdGKb6lSP9HAEPRWG5xszirF8uc65FQ27l66BvksIN00XjNP3WZtEZ9X7K3zcjlCQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,11 @@
     "C:\\Users\\LINJOJ\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.5\\microsoft.net.sdk.webassembly.pack.8.0.5.nupkg.sha512",
     "C:\\Users\\LINJOJ\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\LINJOJ\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
+    "C:\\Users\\LINJOJ\\.nuget\\packages\\syncfusion.blazor.buttons\\25.2.5\\syncfusion.blazor.buttons.25.2.5.nupkg.sha512",
+    "C:\\Users\\LINJOJ\\.nuget\\packages\\syncfusion.blazor.core\\25.2.5\\syncfusion.blazor.core.25.2.5.nupkg.sha512",
+    "C:\\Users\\LINJOJ\\.nuget\\packages\\syncfusion.blazor.popups\\25.2.5\\syncfusion.blazor.popups.25.2.5.nupkg.sha512",
+    "C:\\Users\\LINJOJ\\.nuget\\packages\\syncfusion.blazor.themes\\25.2.5\\syncfusion.blazor.themes.25.2.5.nupkg.sha512",
+    "C:\\Users\\LINJOJ\\.nuget\\packages\\syncfusion.licensing\\25.2.5\\syncfusion.licensing.25.2.5.nupkg.sha512",
     "C:\\Users\\LINJOJ\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\LINJOJ\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.5.2\\system.identitymodel.tokens.jwt.7.5.2.nupkg.sha512",
     "C:\\Users\\LINJOJ\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",

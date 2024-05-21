@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
+      "Id": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\wwwroot\\images\\background\\background.avif",
+      "PackagePath": "staticwebassets\\images\\background\\background.avif"
+    },
+    {
       "Id": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },

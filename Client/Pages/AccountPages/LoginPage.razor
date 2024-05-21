@@ -1,12 +1,23 @@
 ﻿@page "/identity/account/login"
+@layout AuthenticationLayout
 <div class="container">
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-5"></div>
+        <div class="col-lg-2">
             <EditForm Enhance Model="User" OnValidSubmit="HandleLogin">
                 <DataAnnotationsValidator />
-                <ValidationSummary />
-                <div class="card">
-                    <div class="card-header">Fill this form to Login</div>
+                
+                <div class="card bg-dark" style="opacity:0.5; margin-top:50%; border-radius:10px; color:white; font-weight:bold">
+                    <div class="card-header text-center fs-5 mb-2">Fill this form to Login</div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="col-lg-4 col-md-4 col-sm-4 d-flex justify-content-center">
+                                <img style="border-radius:20px" src="../images/background/background.avif" height="50" width="50"/>
+                            </div>
+                        </div>
+
+                    </div>
                     <div class="card-body">
                         <div class="form-group mt-3">
                             <label class="form-label">Email</label>
@@ -17,8 +28,23 @@
                             <InputText @bind-Value="User.Password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
-                            <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                            @if (ShowLoadingButton)
+                            {
+                                <ButtonLoadingSpinner></ButtonLoadingSpinner>
+                            }
+                            else
+                            {
+                                <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                            }
+                           
                         </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="text-center">
+                            Don't have account?
+                            <a class="btn-link" href="identity/account/register">Sign Up</a>
+                        </span>
+                        <ValidationSummary />
                     </div>
                 </div>
             </EditForm>
@@ -28,9 +54,11 @@
 </div>
 
 @code {
+    public bool ShowLoadingButton { get; set; } = false;
     Login User = new();
     async Task HandleLogin()
     {
+        ShowLoadingButton = true;
         var result = await accountService.SignInAsync(User);
         if (result.Flag)
         {
@@ -42,5 +70,6 @@
                 });
             navManager.NavigateTo("/", forceLoad: true);
         }
+        ShowLoadingButton = false;
     }
 }

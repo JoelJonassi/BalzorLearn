@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BdCqQgO3d/ylW+/dWMI7iPu6e7Ui7nOJ/iA9FRZjJGY=",
+  "Hash": "ZnJf2P2E4EtBO3dT+JIdLUwcP5WZ267vIjBRr4q+AzQ=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -8812,6 +8812,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\icon-192.png"
+    },
+    {
+      "Identity": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\wwwroot\\images\\background\\background.avif",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "images/background/background.avif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\background\\background.avif"
     },
     {
       "Identity": "C:\\Users\\LINJOJ\\Downloads\\Scmav\\Client\\wwwroot\\index.html",

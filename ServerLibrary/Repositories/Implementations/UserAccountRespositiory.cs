@@ -70,7 +70,7 @@ namespace ServerLibrary.Repositories.Implementations
             var getUserRole = await FindUserRole(applicationUser.Id);
             if (getUserRole is null) return new LoginResponse(false, "User role not found");
 
-            var getRoleName = await FindRoleName(getUserRole.Id);
+            var getRoleName = await FindRoleName(getUserRole.RoleId);
             if (getUserRole is null) return new LoginResponse(false, "User role nof found");
 
             string jwtToken = GenerateTokenJWT(applicationUser, getRoleName!.Name);
