@@ -119,7 +119,7 @@ namespace ServerLibrary.Repositories.Implementations
             var token = new JwtSecurityToken(
                 issuer: config.Value.Issuer,
                 audience: config.Value.Audience,
-                expires: DateTime.Now.AddDays(7),
+                expires: DateTime.Now.AddSeconds(2),
                 claims: new Claim[]
                 {
                 new(ClaimTypes.NameIdentifier, user.Id.ToString()),

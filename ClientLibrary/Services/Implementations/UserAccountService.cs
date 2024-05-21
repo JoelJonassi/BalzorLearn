@@ -28,9 +28,14 @@ namespace ClientLibrary.Services.Implementations
             return await result.Content.ReadFromJsonAsync<LoginResponse>();
         }
 
-        public Task<LoginResponse> RefreshTokenAsyn(RefreshToken token)
+        public async Task<LoginResponse> RefreshTokenAsyn(RefreshToken token)
         {
-            throw new NotImplementedException();
+
+            var httpClient = getHttpClient.GetPublicHttpClient();
+            var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/refresh-toke", token);
+            if (!result.IsSuccessStatusCode) return new LoginResponse(false, " Error occured");
+
+            return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
         }
 
 
