@@ -49,3 +49,4 @@ C:\Users\LINJOJ\Downloads\Scmav\ServerLibrary\obj\Debug\net8.0\refint\ServerLibr
 C:\Users\LINJOJ\Downloads\Scmav\ServerLibrary\obj\Debug\net8.0\ServerLibrary.pdb
 C:\Users\LINJOJ\Downloads\Scmav\ServerLibrary\obj\Debug\net8.0\ServerLibrary.genruntimeconfig.cache
 C:\Users\LINJOJ\Downloads\Scmav\ServerLibrary\obj\Debug\net8.0\ref\ServerLibrary.dll
+C:\Users\LINJOJ\Downloads\Scmav\ServerLibrary\obj\Debug\net8.0\ServerLibrary.sourcelink.json

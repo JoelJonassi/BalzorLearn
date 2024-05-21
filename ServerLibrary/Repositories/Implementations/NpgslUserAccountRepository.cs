@@ -21,15 +21,15 @@ namespace ServerLibrary.Repositories.Implementations
                 using (var connection = NpgsqlDbContext.DBConnection())
                 {
                     await connection.OpenAsync();
-                    string query = $"Select registar_utilizador(@nome_utilizador, @abv_nome, @email, @password, @id_area, @activeCol);";
-
+                    string query = $"Select registar_utilizador(@utilizador_nome, @nome_abv, @email_parameter, @password_parameter, @area_id, @active);";
+    
                     var command = new NpgsqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@nome_utilizador", user.FullName);
-                    command.Parameters.AddWithValue("@abv_nome", user.ShortName);
-                    command.Parameters.AddWithValue("@email", user.Email);
-                    command.Parameters.AddWithValue("@password", user.Password);
-                    command.Parameters.AddWithValue("@id_area", user.IdArea);
-                    command.Parameters.AddWithValue("@activeCol", user.Active);
+                    command.Parameters.AddWithValue("@utilizador_nome", user.FullName);
+                    command.Parameters.AddWithValue("@nome_abv", user.ShortName);
+                    command.Parameters.AddWithValue("@email_parameter", user.Email);
+                    command.Parameters.AddWithValue("@password_parameter", user.Password);
+                    command.Parameters.AddWithValue("@area_id", user.IdArea);
+                    command.Parameters.AddWithValue("@active", user.Active);
                     var result = await command.ExecuteScalarAsync();
                     connection.Close();
                     bool? resultBool = result as bool?;
@@ -48,12 +48,12 @@ namespace ServerLibrary.Repositories.Implementations
             {
                 var instance = new PostgreSQLTools(NpgsqlDbContext.GetConnectionString());
                 NpgsqlParameter[] parameters = new NpgsqlParameter[] {
-                    new NpgsqlParameter("nome_utilizador", user.FullName), //"@nome_utilizador"
-                    new NpgsqlParameter("abv_nome", user.ShortName),
-                    new NpgsqlParameter("email", user.Email),
-                    new NpgsqlParameter("password", user.Password),
-                    new NpgsqlParameter("id_area", user.IdArea),
-                    new NpgsqlParameter("activeCol", user.Active)
+                    new NpgsqlParameter("utilizador_nome", user.FullName), //"@nome_utilizador"
+                    new NpgsqlParameter("nome_abv", user.ShortName),
+                    new NpgsqlParameter("email_parameter", user.Email),
+                    new NpgsqlParameter("password_parameter", user.Password),
+                    new NpgsqlParameter("area_id", user.IdArea),
+                    new NpgsqlParameter("active", user.Active)
                 };
                 int? resultBool = instance.SetDbDataScalar("registar_utilizador", parameters);
                 return resultBool == 1 ? new GeneralResponse(true, "Account created") : new GeneralResponse(false, "Account not created");

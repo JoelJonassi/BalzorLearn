@@ -114,13 +114,12 @@ namespace ServerLibrary.Repositories.Implementations
         private string GenerateTokenJWT(ApplicationUser user, string role)
         {
   
-            var expiry = DateTime.Now.AddDays(7);
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config.Value.Key!));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             var token = new JwtSecurityToken(
                 issuer: config.Value.Issuer,
                 audience: config.Value.Audience,
-                expires: expiry,
+                expires: DateTime.Now.AddDays(7),
                 claims: new Claim[]
                 {
                 new(ClaimTypes.NameIdentifier, user.Id.ToString()),

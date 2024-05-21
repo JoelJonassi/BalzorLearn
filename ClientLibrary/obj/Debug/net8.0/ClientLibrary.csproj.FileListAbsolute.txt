@@ -39,3 +39,4 @@ C:\Users\LINJOJ\Downloads\Scmav\ClientLibrary\obj\Debug\net8.0\ClientLibrary.dll
 C:\Users\LINJOJ\Downloads\Scmav\ClientLibrary\obj\Debug\net8.0\refint\ClientLibrary.dll
 C:\Users\LINJOJ\Downloads\Scmav\ClientLibrary\obj\Debug\net8.0\ClientLibrary.pdb
 C:\Users\LINJOJ\Downloads\Scmav\ClientLibrary\obj\Debug\net8.0\ref\ClientLibrary.dll
+C:\Users\LINJOJ\Downloads\Scmav\ClientLibrary\obj\Debug\net8.0\ClientLibrary.sourcelink.json

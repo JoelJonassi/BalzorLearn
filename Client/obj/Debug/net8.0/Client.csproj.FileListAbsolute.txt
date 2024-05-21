@@ -3310,3 +3310,4 @@ C:\Users\LINJOJ\Downloads\Scmav\Client\bin\Debug\net8.0\wwwroot\_framework\BCryp
 C:\Users\LINJOJ\Downloads\Scmav\Client\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\LINJOJ\Downloads\Scmav\Client\obj\Debug\net8.0\webcil\BCrypt.Net-Next.wasm
 C:\Users\LINJOJ\Downloads\Scmav\Client\obj\Debug\net8.0\compressed\ojorf4mstz.gz
+C:\Users\LINJOJ\Downloads\Scmav\Client\obj\Debug\net8.0\Client.sourcelink.json

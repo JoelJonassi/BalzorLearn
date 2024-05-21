@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Server\Server.csproj", "{21433081-22AA-46FE-AAEA-59684FF5AC8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server", "Server\Server.csproj", "{21433081-22AA-46FE-AAEA-59684FF5AC8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{21269DCD-45D8-44A0-BFF1-D40249F13FD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Client", "Client\Client.csproj", "{21269DCD-45D8-44A0-BFF1-D40249F13FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseLibrary", "BaseLibrary\BaseLibrary.csproj", "{9C7C7F7E-2CCF-4FBB-B3BF-1CA35BEC2725}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseLibrary", "BaseLibrary\BaseLibrary.csproj", "{9C7C7F7E-2CCF-4FBB-B3BF-1CA35BEC2725}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientLibrary", "ClientLibrary\ClientLibrary.csproj", "{55F35134-92A9-4A03-89BE-134841BEA755}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientLibrary", "ClientLibrary\ClientLibrary.csproj", "{55F35134-92A9-4A03-89BE-134841BEA755}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerLibrary", "ServerLibrary\ServerLibrary.csproj", "{B15B5DB5-59A5-4AA3-8163-87D5F3A362AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerLibrary", "ServerLibrary\ServerLibrary.csproj", "{B15B5DB5-59A5-4AA3-8163-87D5F3A362AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

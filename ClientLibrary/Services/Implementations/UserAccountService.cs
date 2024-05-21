@@ -20,7 +20,7 @@ namespace ClientLibrary.Services.Implementations
             return await result.Content.ReadFromJsonAsync<GeneralResponse>()!;
         }
 
-        public async Task<LoginResponse> SingInAsync(Login user)
+        public async Task<LoginResponse> SignInAsync(Login user)
         {
             var httpClient = getHttpClient.GetPublicHttpClient();
             var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/login", user);
@@ -36,7 +36,7 @@ namespace ClientLibrary.Services.Implementations
 
         public async Task<WeatherForecast[]> GetWeatherForecast()
         {
-            var httpClient = getHttpClient.GetPublicHttpClient();
+            var httpClient = await getHttpClient.GetPrivateHttpClient();
             var result = await httpClient.GetFromJsonAsync<WeatherForecast[]>($"api/weatherforecast");
             return result;
         }

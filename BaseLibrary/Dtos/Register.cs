@@ -14,7 +14,7 @@ namespace BaseLibrary.Dtos
         [Required]
         [MinLength(5)]
         [MaxLength(100)]
-        [Column("nome_utilizador")]
+        //[Column("nome_utilizador")]
         public string FullName { get; set; }
 
         [Column("abv_nome")]
