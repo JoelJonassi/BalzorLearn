@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Client",
   "resources": {
-    "hash": "sha256-kGiyVLMFYkEq5xZRgWrV2AhhGWGBP6lCT4ElklxUJXQ=",
+    "hash": "sha256-OSj+I2yrW/tDUb/BMCpwkruBzn+EqmuhcBRgkAdOcnA=",
     "jsModuleNative": {
       "dotnet.native.8.0.5.6rznb3xedp.js": "sha256-boyHe+0RMZDkzBKGhsrnXPhPg3oZ6UqJnTUzngJPjNY="
     },
@@ -58,6 +58,11 @@
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-k1ycznAW3kfyxO+I3lroU5VWTHPfMEmvwPqq6dnWPtk=",
       "Npgsql.wasm": "sha256-m8iqOvS0eO8rCPcpsZDK+jTsoIdLh7PpQHnm9qeTm+U=",
       "Npgsql.EntityFrameworkCore.PostgreSQL.wasm": "sha256-dXF/liO/XrqNJx2IFzwI1wg8mnGmWcOJbc0gCRdpwJg=",
+      "Syncfusion.Blazor.Buttons.wasm": "sha256-wfVuEFGQWn9DowGp9wtHQgPI9HfMsIAKhcS7G0v5Uuo=",
+      "Syncfusion.Blazor.Core.wasm": "sha256-bnxf+wx/pnUj/5HF2XCASsBb8vwXoBWSOaTWe52r4GM=",
+      "Syncfusion.Blazor.Popups.wasm": "sha256-vm0BYmjJKCZ5MtCuya9+B5nODx/YZoVNGcodKK5byiw=",
+      "Syncfusion.Blazor.Themes.wasm": "sha256-6/gZLFQyXH0uD1zxpdtsxQ8UKFReTKrNRl+s35R2kO4=",
+      "Syncfusion.Licensing.wasm": "sha256-mMbC3WUsiSurxq4doYW+T0zwdqrpEbZqAkmx3JvswTw=",
       "System.IdentityModel.Tokens.Jwt.wasm": "sha256-ZS/79c36xKj4LxGx5WU3mVnYCPzfLbJkX99crxY2+TQ=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Microsoft.CSharp.wasm": "sha256-QZ+XNH5nEsUeYa9owq17t0oiJ5OcWkIe6xmu1ro91bI=",
@@ -228,14 +233,14 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "BaseLibrary.wasm": "sha256-sczYyX6nX5kqMFpEbMpEjncztHJnVtK/KR07ONInA2o=",
-      "ClientLibrary.wasm": "sha256-VQlO4hisqt3iY81sMJ4CLzcy7Hy50yw/uEqE502ngq0=",
-      "Client.wasm": "sha256-QnWzArnEQl/pxwRmDxkwjAsAV/fVkdEQIbubQIIsAaI="
+      "BaseLibrary.wasm": "sha256-lbxziiofGToffcySwl0uGlb/gDJIcvMAHTQ31w9ce5I=",
+      "ClientLibrary.wasm": "sha256-Vpa0IG4W4uLNghqKBPumRBVzx81TcACY9sWcrTi739Y=",
+      "Client.wasm": "sha256-pm3Z3SJ5XWRTllvlez9KISOfobEVGIAK1WK18nPED2g="
     },
     "pdb": {
-      "BaseLibrary.pdb": "sha256-8bJRvP7yiEqqWI4v93o7D16QkeBECxwOPX005kPZgBo=",
-      "ClientLibrary.pdb": "sha256-fWsj9yNZU6awHBMsqzST6eid0bkiVVa5AXtoiqm0H1E=",
-      "Client.pdb": "sha256-mA6hhQmLHcaYbU2CAY814DKquh4EvDi/3EmfKSQ4VMM="
+      "BaseLibrary.pdb": "sha256-PaDY6q8ldgFEISt9hnoI54s1Ukt+5xIBCw/MpJTx+vM=",
+      "ClientLibrary.pdb": "sha256-sm3HXmYBhtSaJxXeqRMyQDtRlFUMHa/GQmAUYhAP2YQ=",
+      "Client.pdb": "sha256-AW1tmHVWj2ZGg593mXwMHK7m9rev/lh7jsysAcGELeA="
     }
   },
   "cacheBootResources": true,

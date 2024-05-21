@@ -1,5 +1,7 @@
 ﻿@page "/identity/account/login"
 @layout AuthenticationLayout
+@inject SfDialogService dialogService
+
 <div class="container">
     <div class="row">
         <div class="col-lg-5"></div>
@@ -56,6 +58,13 @@
 @code {
     public bool ShowLoadingButton { get; set; } = false;
     Login User = new();
+
+    [CascadingParameter] public Task<AuthenticationState> authenticationState { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        await CheckUserAuthentication();
+    }
+
     async Task HandleLogin()
     {
         ShowLoadingButton = true;
@@ -70,6 +79,23 @@
                 });
             navManager.NavigateTo("/", forceLoad: true);
         }
+        else
+        {
+            await DisplayDialog(result.Message, "Alert!");
+        }
         ShowLoadingButton = false;
+    }
+
+    public async Task DisplayDialog(string content, string title)
+    {
+        await dialogService.AlertAsync(content, title);
+    }
+
+    private async Task CheckUserAuthentication()
+    {
+        var user = (await authenticationState).User;
+        bool isUserAuthenticated = user.Identity!.IsAuthenticated;
+        if (isUserAuthenticated)
+            navManager.NavigateTo("/home/dashboard");
     }
 }

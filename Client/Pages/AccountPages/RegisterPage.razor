@@ -1,5 +1,7 @@
 ﻿@page "/identity/account/register"
 @layout AuthenticationLayout
+@inject SfDialogService dialogService
+@inject NavigationManager navManager
 
 <div class="container">
     <div class="row">
@@ -68,17 +70,45 @@
 
 </div>
 
+
 @code {
+
+    private LoginPage loginPage;
+
     public bool ShowLoadingButton { get; set; } = false;
     Register User = new();
+
+    [CascadingParameter] public Task<AuthenticationState> authenticationState { get; set; }
+    protected async override Task OnInitializedAsync()
+    {
+        await CheckUserAuthentication();
+    }
+
+
+
     async Task HandleRegistration(){
         ShowLoadingButton = true;
         var result = await accountService.CreateAsync(User);
         if(result.Flag){
+            await DisplayDialog(result.Message, "Success");
             User = new();
         }else{
-
+            await DisplayDialog(result.Message, "Alert!");
         }
         ShowLoadingButton = false;
+    }
+
+
+    public async Task DisplayDialog(string content, string title)
+    {
+        await dialogService.AlertAsync(content, title);
+    }
+
+    private async Task CheckUserAuthentication()
+    {
+        var user = (await authenticationState).User;
+        bool isUserAuthenticated = user.Identity!.IsAuthenticated;
+        if (isUserAuthenticated)
+            navManager.NavigateTo("/home/dashboard");
     }
 }
